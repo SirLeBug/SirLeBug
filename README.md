@@ -21,10 +21,11 @@ class AboutMe() {
   const string fullName = "Daniel Sanz"
   const string[] hobbies = {"Videogames", "IT Technology Software"};
   string field = "";
-  var year = DateTime.Now.Year;
 
   public string currentField()
   {
+    var year = DateTime.Now.Year;
+
     switch(year) 
     {
       case 2017:
