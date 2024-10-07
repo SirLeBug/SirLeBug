@@ -20,7 +20,7 @@ class AboutMe() {
 
   const string fullName = "Daniel Sanz"
   const string[] hobbies = {"Videogames", "IT Technology Software"};
-  string field;
+  string field = "";
   var year = DateTime.Now.Year;
 
   public string currentField()
@@ -40,7 +40,7 @@ class AboutMe() {
         return "Videogame Developer";
         break;
       default:
-        return "Videogame Enthusiast"
+        return "Videogame Enthusiast";
         break;
     }
   }
@@ -49,6 +49,7 @@ class AboutMe() {
     {
       AboutMe me = new AboutMe();
       me.field = currentField();
+
       Console.WriteLine("Hi, my name is " + fullName + " my interests mostly consist of "
         + hobbies[0] + " and also " + hobbies[1] +". I am currently an emerging " + field +
         ", I hope you enjoy your stay.");
